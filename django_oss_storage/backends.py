@@ -14,9 +14,16 @@ from django.core.files import File
 from django.core.exceptions import ImproperlyConfigured, SuspiciousOperation
 from django.core.files.storage import Storage
 from django.conf import settings
-from django.utils.encoding import force_text, force_bytes
+try:
+    from django.utils.encoding import force_text
+except ImportError:
+    from django.utils.encoding import force_str as force_text
 from django.utils.deconstruct import deconstructible
-from django.utils.timezone import utc
+try:
+    from django.utils.timezone import utc
+except ImportError:
+    from datetime import timezone
+    utc = timezone.utc
 from tempfile import SpooledTemporaryFile
 
 import oss2.utils
