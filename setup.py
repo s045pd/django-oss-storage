@@ -22,15 +22,16 @@ with open('README.rst', 'rb') as f:
     readme = f.read().decode('utf-8')
 
 setup(
-    name='django-oss-storage',
+    name='django5_oss',
     version=version,
-    description='Django Aliyun OSS (Object Storage Service) storage',
+    author="s045pd",
+    description='Django Aliyun OSS (Object Storage Service) storage for Django 5.0+',
     long_description=readme,
     packages=['django_oss_storage'],
-    install_requires=['django>=1.10',
+    install_requires=['django>=5.0.7',
                       'oss2>=2.3.3'],
     include_package_data=True,
-    url='https://www.aliyun.com/product/oss',
+    url='https://github.com/s045pd/django-oss-storage',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
@@ -45,6 +46,10 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Framework :: Django',
     ],
 )
