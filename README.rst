@@ -9,7 +9,7 @@ Features
 
 - Django file storage for AliCloud OSS
 - Django static file storage for AliCloud OSS
-- Works in Python 2 & 3
+- Works in Python 3
 
 Installation
 ============
@@ -18,7 +18,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install django-oss-storage
+    $ pip install django5-oss
 
 - Add ``'django_oss_storage'`` to your ``INSTALLED_APPS`` setting
 - Set your ``DEFAULT_FILE_STORAGE`` setting to ``"django_oss_storage.backends.OssMediaStorage"``
