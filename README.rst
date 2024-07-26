@@ -9,7 +9,7 @@ Features
 
 - Django file storage for AliCloud OSS
 - Django static file storage for AliCloud OSS
-- Works in Python 3
+- Works in Python 3 && Django5 
 
 Installation
 ============
